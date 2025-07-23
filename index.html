@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Tailwind css cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="max-w-6xl mx-auto mt-2 md:mt-4">
+      <!-- navbar section -->
+      <nav class="flex items-center justify-between px-6 md:px-4 lg:px-0">
+        <img src="./assets/logo.png" alt="" />
+        <div class="flex items-center justify-center gap-6">
+          <ul class="hidden md:flex items-center justify-center gap-6">
+            <li>
+              <a href="" class="text-[#000000] font-bold inter">Home</a>
+            </li>
+            <li><a href="" class="text-[#8987A1] inter">About</a></li>
+            <li><a href="" class="text-[#8987A1] inter">Contact</a></li>
+          </ul>
+          <h3 class="flex gap-2 text-[#000000] inter font-normal">
+            <img src="./assets/shopping-cart.png" alt="" /><span
+              >Cart ($56)</span
+            >
+          </h3>
+        </div>
+      </nav>
+
+      <!--hero banner section -->
+      <div
+        class="flex flex-col-reverse md:flex-row items-center justify-center w-full px-4 md:px-0"
+      >
+        <div class="w-full md:w-1/2 mt-7 md:mt-32">
+          <h2
+            class="font-bold text-2xl md:text-6xl text-[#000000] mb-3 mt-7 py-4 md:py-0 md:mt-0 w-1/2 md:w-full"
+          >
+            ALWAYS <span class="text-[#E95A08]"> FRESH</span
+            ><span class="text-[#E95A08]"> FLOWERS</span>
+          </h2>
+          <p class="text-sm md:text-2xl text-[#00000080]">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
+        </div>
+        <div class="w-full md:w-1/2">
+          <img src="./assets/hero-flower.png" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <!-- Main section -->
+    <main>
+      <!-- Our Plants section -->
+
+      <section class="max-w-6xl mx-auto">
+        <h2 class="text-2xl md:text-6xl font-bold text-center mt-16 md:mt-28">
+          Our <span class="text-[#E95A08]">Plants</span>
+        </h2>
+        <p
+          class="text-center w-full md:w-[600px] m-auto mt-4 text-[#00000080] text-sm md:text-2xl px-7 md:px-0"
+        >
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-7">
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+          <div>
+            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <h4 class="text-center font-medium text-2xl mt-7">Lily Blossom</h4>
+            <p class="text-center text-2xl font-bold mb-7 mt-5">20 USD</p>
+            <button
+              class="w-full uppercase text- bg-[#E95A08] font-semibold py-2 text-[#FFFFFF]"
+            >
+              Add To Card
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flower & Plants Lover -->
+       
+    </main>
+
+    <!-- Footer section -->
+    <footer></footer>
+  </body>
 </html>
