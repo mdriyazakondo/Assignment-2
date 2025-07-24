@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
-
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Tailwind css cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -37,10 +44,11 @@
             <li><a href="#" class="text-[#8987A1] inter">Shop</a></li>
             <li><a href="#" class="text-[#8987A1] inter">About us </a></li>
           </ul>
-          <a href="#" class="flex gap-2 text-[#000000] inter font-normal">
-            <img src="./assets/shopping-cart.png" alt="shopping-cart" /><span
-              >Cart ($56)</span
-            >
+          <a
+            href="#"
+            class="flex items-center justify-center gap-2 text-[#000000] inter"
+          >
+            <i class="fa-solid fa-cart-shopping"></i><span>Cart ($56)</span>
           </a>
         </div>
       </nav>
@@ -280,21 +288,21 @@
           />
         </div>
         <div class="w-full md:w-1/2 my-10">
-          <h2 class="text-2xl md:text-5xl font-bold mb-5 noto-serif">
+          <h2 class="text-2xl md:text-6xl font-bold mb-5 noto-serif">
             Flower & Plants Lover
           </h2>
           <ul class="list-disc py-8 pl-8 space-y-5 text-[#00000080]">
-            <li class="text-sm md:text-[22px] font-medium inter">
+            <li class="text-sm md:text-[22px] font-medium inter leading-7">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
             </li>
-            <li class="text-sm md:text-[22px] font-medium inter">
+            <li class="text-sm md:text-[22px] font-medium inter leading-7">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
             </li>
-            <li class="text-sm md:text-[22px] font-medium inter">
+            <li class="text-sm md:text-[22px] font-medium inter leading-7">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop. From classic roses to exotic blooms, we offer a wide
               variety of fresh.
@@ -318,41 +326,55 @@
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
         </p>
+
         <div class="flex flex-col md:flex-row gap-4">
+          <!-- Left two blocks -->
           <div class="w-full md:w-[367px] space-y-4">
+            <!-- First Card -->
             <div
-              class="w-full md:w-[367px] bg-[url('./assets/deal-ana.png')] bg-cover bg-center py-16 px-12 rounded-lg"
+              class="relative w-full md:w-[367px] bg-[url('./assets/deal-ana.png')] bg-cover bg-center py-16 px-12 rounded-lg"
             >
-              <h4 class="text-center text-[#FFFFFF] text-xl font-bold">
-                60% Off | Bloom Plant
-              </h4>
-              <div class="text-center mt-3">
-                <button
-                  class="underline font-semibold cursor-pointer text-[#FFFFFF]"
-                >
-                  Shop Now
-                </button>
+              <div class="absolute inset-0 bg-black/50 rounded-lg"></div>
+              <div class="relative z-10">
+                <h4 class="text-center text-[#FFFFFF] text-xl font-bold">
+                  60% Off | Bloom Plant
+                </h4>
+                <div class="text-center mt-3">
+                  <button
+                    class="underline font-semibold cursor-pointer text-[#FFFFFF]"
+                  >
+                    Shop Now
+                  </button>
+                </div>
               </div>
             </div>
+
+            <!-- Second Card -->
             <div
-              class="bg-[url('./assets/deal-bloom.png')] bg-cover bg-center py-16 px-12 rounded-lg"
+              class="relative bg-[url('./assets/deal-bloom.png')] bg-cover bg-center py-16 px-12 rounded-lg"
             >
-              <h4 class="text-center text-[#FFFFFF] text-xl font-bold">
-                30% Off | Ana Plant
-              </h4>
-              <div class="text-center mt-3">
-                <button
-                  class="underline font-semibold cursor-pointer text-[#FFFFFF]"
-                >
-                  Shop Now
-                </button>
+              <div class="absolute inset-0 bg-black/50 rounded-lg"></div>
+              <div class="relative z-10">
+                <h4 class="text-center text-[#FFFFFF] text-xl font-bold">
+                  30% Off | Ana Plant
+                </h4>
+                <div class="text-center mt-3">
+                  <button
+                    class="underline font-semibold cursor-pointer text-[#FFFFFF]"
+                  >
+                    Shop Now
+                  </button>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- Right side big block -->
           <div
-            class="w-full bg-[url('./assets/deal-zabo.png')] bg-cover bg-center flex items-center justify-center py-16 md:py-40 px-12 md:px-32 rounded-lg"
+            class="relative w-full bg-[url('./assets/deal-zabo.png')] bg-cover bg-center flex items-center justify-center py-16 md:py-40 px-12 md:px-32 rounded-lg"
           >
-            <div class="">
+            <div class="absolute inset-0 bg-black/50 rounded-lg"></div>
+            <div class="relative z-10 text-center">
               <h4 class="text-[#FFFFFF] font-bold text-xl md:text-4xl">
                 25% Off | Zabo Plant
               </h4>
