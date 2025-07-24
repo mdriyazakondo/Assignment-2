@@ -5,32 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 2</title>
     <!-- font-awesome cdn -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
     <!-- Tailwind css cdn link -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+
+      .noto-serif {
+        font-family: "Noto Serif", serif;
+      }
+    </style>
   </head>
   <body>
     <!-- Header section -->
     <header class="max-w-6xl mx-auto mt-2 md:mt-4">
       <!-- navbar section -->
       <nav class="flex items-center justify-between px-6 md:px-4 lg:px-0">
-        <img src="./assets/logo.png" alt="" />
+        <img
+          class="h-[82px] w-[132]"
+          src="./assets/logo.png"
+          alt="companny logo"
+        />
         <div class="flex items-center justify-center gap-6">
           <ul class="hidden md:flex items-center justify-center gap-6">
             <li>
               <a href="" class="text-[#000000] font-bold inter">Home</a>
             </li>
-            <li><a href="" class="text-[#8987A1] inter">About</a></li>
-            <li><a href="" class="text-[#8987A1] inter">Contact</a></li>
+            <li><a href="" class="text-[#8987A1] inter">Shop</a></li>
+            <li><a href="" class="text-[#8987A1] inter">About us </a></li>
           </ul>
           <h3 class="flex gap-2 text-[#000000] inter font-normal">
-            <img src="./assets/shopping-cart.png" alt="" /><span
+            <img src="./assets/shopping-cart.png" alt="shopping-cart" /><span
               >Cart ($56)</span
             >
           </h3>
@@ -55,7 +70,7 @@
           </p>
         </div>
         <div class="w-full md:w-1/2">
-          <img src="./assets/hero-flower.png" alt="" />
+          <img src="./assets/hero-flower.png" alt="hero-flower" />
         </div>
       </div>
     </header>
@@ -64,10 +79,8 @@
     <main>
       <!-- Our Plants section -->
 
-      <section class="max-w-6xl mx-auto px-4 md:px-0">
-        <h2
-          class="text-2xl md:text-6xl font-bold text-center mt-16 md:mt-28 noto-serif"
-        >
+      <section class="max-w-6xl mx-auto px-4 md:px-0 mt-16 md:mt-[120px]">
+        <h2 class="text-2xl md:text-6xl font-bold text-center noto-serif">
           Our <span class="text-[#E95A08]">Plants</span>
         </h2>
         <p
@@ -77,9 +90,13 @@
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
         </p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-7 mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-12 mx-auto">
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -93,11 +110,15 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image.png"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -111,11 +132,15 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -129,11 +154,15 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -147,11 +176,15 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -165,11 +198,15 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -183,11 +220,15 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -201,11 +242,15 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
           <div>
-            <img class="w-full" src="./assets/sample-flower-image.png" alt="" />
+            <img
+              class="w-full"
+              src="./assets/sample-flower-image.png"
+              alt="sample-flower-image"
+            />
             <h4
               class="text-center font-medium text-2xl mt-7 text-[#111111] inter"
             >
@@ -219,7 +264,7 @@
             <button
               class="w-full uppercase border-2 border-[#E95A08] bg-[#E95A08] font-semibold py-2 text-[#FFFFFF] inter cursor-pointer hover:bg-transparent hover:text-[#E95A08]"
             >
-              Add To Card
+              ADD TO CART
             </button>
           </div>
         </div>
@@ -227,7 +272,7 @@
 
       <!-- Flower & Plants Lover -->
       <section
-        class="max-w-6xl mx-auto md:flex justify-center mt-7 md:mt-48 gap-16 px-4 md:px-0"
+        class="max-w-6xl mx-auto md:flex justify-center mt-7 md:mt-52 gap-16 px-4 md:px-0"
       >
         <div class="relative w-full md:w-1/2">
           <img
@@ -236,9 +281,9 @@
             alt="Flower Store Image"
           />
           <img
-            class="absolute hidden md:block w-[286px] h-[286px] -top-28 -right-20"
+            class="absolute hidden md:block w-[286px] h-[286px] -top-28 -right-20 border"
             src="./assets/trusted-badge.png"
-            alt=""
+            alt="trusted-badge"
           />
         </div>
         <div class="w-full md:w-1/2 my-10">
@@ -267,12 +312,12 @@
 
       <section class="max-w-6xl mx-auto mb-10 md:my-32 px-4 md:px-0">
         <h2
-          class="text-2xl md:text-5xl font-bold text-center text-[#E95A08] mt-32"
+          class="text-2xl md:text-5xl font-bold text-center text-[#E95A08] mb-4"
         >
           Latest <span class="text-[#000000]">Deals</span>
         </h2>
         <p
-          class="text-center w-[336px] md:w-[800px] m-auto text-[#00000080] font-normal text-sm md:text-[22px] mb-12 md:mb-32 mt-4"
+          class="text-center w-[336px] md:w-[800px] m-auto text-[#00000080] font-normal text-sm md:text-[22px] mb-10 md:mb-32"
         >
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From classic roses to exotic blooms, we offer a wide variety of
@@ -281,7 +326,7 @@
         <div class="flex flex-col md:flex-row gap-4">
           <div class="w-full md:w-[367px] space-y-4">
             <div
-              class="w-full md:w-[367px] bg-[url('./assets/deal-ana.png')] bg-cover bg-center py-16 px-12 rounded-md"
+              class="w-full md:w-[367px] bg-[url('./assets/deal-ana.png')] bg-cover bg-center py-16 px-12 rounded-lg"
             >
               <h4 class="text-center text-[#FFFFFF] text-xl font-bold">
                 60% Off | Bloom Plant
@@ -295,7 +340,7 @@
               </div>
             </div>
             <div
-              class="bg-[url('./assets/deal-bloom.png')] bg-cover bg-center py-16 px-12 rounded-md"
+              class="bg-[url('./assets/deal-bloom.png')] bg-cover bg-center py-16 px-12 rounded-lg"
             >
               <h4 class="text-center text-[#FFFFFF] text-xl font-bold">
                 30% Off | Ana Plant
@@ -310,15 +355,15 @@
             </div>
           </div>
           <div
-            class="w-full bg-[url('./assets/deal-zabo.png')] bg-cover bg-center flex items-center justify-center md:w-[753px] rounded-md"
+            class="w-full bg-[url('./assets/deal-zabo.png')] bg-cover bg-center flex items-center justify-center py-16 md:py-40 px-12 md:px-32 rounded-lg"
           >
-            <div class="pt-12 pb-9 md:pt-14 md:mb-9 md:ml-12 md:mr-10">
-              <h4 class="text-[#FFFFFF] font-bold text-xl md:text-[40px]">
+            <div class="">
+              <h4 class="text-[#FFFFFF] font-bold text-xl md:text-4xl">
                 25% Off | Zabo Plant
               </h4>
               <div class="text-center mt-3">
                 <button
-                  class="underline font-semibold cursor-pointer text-[28px] text-sm text-[#FFFFFF]"
+                  class="underline font-semibold cursor-pointer text-[16px] md:text-2xl text-[#FFFFFF]"
                 >
                   Shop Now
                 </button>
@@ -362,7 +407,11 @@
         class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-28 my-14 px-8 md:px-0"
       >
         <div>
-          <img src="./assets/logo.png" alt="" />
+          <img
+            class="h-[82px] w-[132]"
+            src="./assets/logo.png"
+            alt="companny logo"
+          />
           <p class="inter mt-4 text-[#00000080]">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop.
@@ -399,22 +448,22 @@
           <img
             class="w-[36px] h-[36px]"
             src="./assets/icon-facebook.png"
-            alt=""
+            alt="icon-facebook"
           />
           <img
             class="w-[36px] h-[36px]"
             src="./assets/icon-twitter.png"
-            alt=""
+            alt="icon-twitter"
           />
           <img
             class="w-[36px] h-[36px]"
             src="./assets/icon-linkedin.png"
-            alt=""
+            alt="icon-linkedin"
           />
           <img
             class="w-[36px] h-[36px]"
             src="./assets/icon-youtube.png"
-            alt=""
+            alt="icon-youtube"
           />
         </div>
       </div>
